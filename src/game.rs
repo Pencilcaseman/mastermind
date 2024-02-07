@@ -198,8 +198,6 @@ pub fn gen_states() -> Vec<State> {
 }
 
 pub fn user_input_row() -> Row {
-    // println!("\n{}", format!("{:=^42}", " Make a Guess ").green());
-
     for (index, val) in PIECES.iter().enumerate() {
         print!("{}", apply_board(&format!("  {index} {val}  ")));
     }

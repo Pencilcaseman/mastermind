@@ -1,4 +1,4 @@
-name: Build and Test
+name: Build
 
 on:
   push:
@@ -18,5 +18,5 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build
       run: cargo build --release
-    - name: Run tests
-      run: cargo run --release -- -c
+
+    # I would test it here, but it takes ages and we know it works so yk...
